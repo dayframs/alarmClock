@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+#alarm {
+    width: 380px;
+    margin: 80px auto;
+    border: 1px solid white;
+    padding: 40px 0;
+    background: linear-gradient(45deg, red, black, rgb(55, 54, 54));
+    border-radius: 5px;
+}
+#myTime {
+    color: white;
+    padding: 20px;
+    font-size: 37px;
+    box-shadow: 1px 1px 1px 3px rgb(128, 128, 128, 0.15);
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(225deg, rgb(0, 0, 255, 0.5), rgb(0, 255, 255, 0.7))
+}
+#userTime {
+    margin: 20px auto;
+    width: 80%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 3px 10px 10px 10px;
+    background-color: rgb(0, 255, 255, 0.1);
+}
+#userTime span {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    position: relative;
+}
+span select{
+    width: 75px;
+    height: 50px;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+    padding-right: 10px;
+}
+#uhrs::after,
+#umins::after,
+#usecs::after {
+    content: 'Hours';
+    font-size: 14px;
+    position: absolute;
+    bottom: -15px;
+    left: 12px;
+}
+#umins::after {
+    content: 'Minutes';
+}
+#usecs::after {
+    content: 'Seconds';
+}
+#button {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 70px;
+}
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(61, 59, 59);
+    color: white;
+    box-shadow: 1px 2px 2px 2px grey;
+    transition: all 0.15s;
+}
+button:active {
+    transform: scale(110%);
+    background-color: aqua
+}
