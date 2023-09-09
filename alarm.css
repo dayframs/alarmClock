@@ -67,6 +67,7 @@ span select{
     font-size: 12px;
     position: absolute;
     bottom: -3px;
+    width: 25%;
     left: 20px;
 }
 #umins::after {

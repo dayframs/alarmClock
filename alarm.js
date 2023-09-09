@@ -1,4 +1,4 @@
-let a, b, c, d, e, f, uHr, uMin, uSec, x;    
+let a, b, c, uHr, uMin, uSec, x;    
 
 function myFunc(){
     let currentTime = new Date();
@@ -10,8 +10,11 @@ function myFunc(){
     hours.innerText = currentTime.getHours();
     minutes.innerText = currentTime.getMinutes();
     seconds.innerText = currentTime.getSeconds();
+
+    console.log(a, 'Ola');
+    console.log(uHr, 'Ade');
     if (a==uHr && b==uMin && c==uSec) {
-        x = new Audio("./mus2.mp3");
+        x = new Audio("mus2.mp3");
         x.play();
         // x.loop();
     }
