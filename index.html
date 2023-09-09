@@ -17,7 +17,7 @@
         </div>
         <div id="userTime">
             <span id="uhrs">
-                <select name="userHours" id="userhours">
+                <select name="userHours" id="userHours">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -46,7 +46,7 @@
             </span>
             <span>:</span>
             <span id="umins">
-                <select name="usersMinute" id="userminutes">
+                <select name="usersMinute" id="userMinutes">
                 <option value="00">0</option>
                 <option value="01">1</option>
                 <option value="02">2</option>
@@ -111,7 +111,7 @@
             </span>
             <span>:</span>
             <span id="usecs">
-                <select name="usersSecond" id="userseconds">
+                <select name="usersSecond" id="userSeconds">
                 <option value="00">0</option>
                 <option value="01">1</option>
                 <option value="02">2</option>
@@ -177,8 +177,9 @@
         </div>
         <div id="button">
             <button id="set" onclick="setAlarm()">SET</button>
-            <button id="stop">STOP</button>
+            <button id="stop" onclick="stopAlarm()">STOP</button>
         </div>
+        <p>Dayframs</p>
     </div>
 </body>
 

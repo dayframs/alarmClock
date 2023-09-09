@@ -15,6 +15,7 @@ body {
     padding: 40px 0;
     background: linear-gradient(45deg, red, black, rgb(55, 54, 54));
     border-radius: 5px;
+    position: relative;
 }
 #myTime {
     color: white;
@@ -28,18 +29,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(225deg, rgb(0, 0, 255, 0.5), rgb(0, 255, 255, 0.7))
+    background: conic-gradient( rgb(0, 255, 255, 0.7), rgb(128, 128, 128, 0.5), rgb(0, 0, 255, 0.15));
+    /* background: conic-gradient(225deg, rgb(0, 0, 255, 0.5), rgb(0, 255, 255, 0.7)) */
 }
 #userTime {
     margin: 20px auto;
     width: 80%;
-    height: 100px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 5px;
-    padding: 10px;
-    border-radius: 3px 10px 10px 10px;
+    padding: 0 10px 18px 10px;
+    border-radius: 10px;
     background-color: rgb(0, 255, 255, 0.1);
 }
 #userTime span {
@@ -52,23 +53,22 @@ body {
 span select{
     width: 75px;
     height: 50px;
-    font-size: 22px;
+    font-size: 28px;
     font-weight: 600;
-    color: white;
+    color: blue;
     border: none;
-    background-color: black;
-    border-radius: 10px;
+    background-color: inherit;
+    appearance: none;
     text-align: center;
-    padding-right: 10px;
 }
 #uhrs::after,
 #umins::after,
 #usecs::after {
     content: 'Hours';
-    font-size: 14px;
+    font-size: 12px;
     position: absolute;
-    bottom: -15px;
-    left: 12px;
+    bottom: -3px;
+    left: 18px;
 }
 #umins::after {
     content: 'Minutes';
@@ -102,4 +102,13 @@ button {
 button:active {
     transform: scale(110%);
     background-color: aqua
+}
+p {
+    position: absolute;
+    right: 10px;
+    bottom: -35px;
+    color: white;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 600;
 }

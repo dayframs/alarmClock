@@ -1,4 +1,4 @@
-let a, b, c, uHr, uMin, uSec;    
+let a, b, c, uHr, uMin, uSec, x;    
 
 function myFunc(){
     let currentTime = new Date();
@@ -11,17 +11,19 @@ function myFunc(){
     minutes.innerText = currentTime.getMinutes();
     seconds.innerText = currentTime.getSeconds();
     if (a==uHr && b==uMin && c==uSec) {
-        console.log('wake up');
+        x = new Audio("./mus2.mp3");
+        x.play();
     }
 }
+
 myFunc();
 setInterval(myFunc, 1000);
 
 function setAlarm() { 
-    uHr = userhours.value; 
-    uMin = userminutes.value; 
-    uSec = userseconds.value;
+    uHr = userHours.value; 
+    uMin = userMinutes.value; 
+    uSec = userSeconds.value;
 }
 function stopAlarm() {
-    
+    x.pause();
 }
