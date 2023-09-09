@@ -30,7 +30,6 @@ body {
     align-items: center;
     justify-content: center;
     background: conic-gradient( rgb(0, 255, 255, 0.7), rgb(128, 128, 128, 0.5), rgb(0, 0, 255, 0.15));
-    /* background: conic-gradient(225deg, rgb(0, 0, 255, 0.5), rgb(0, 255, 255, 0.7)) */
 }
 #userTime {
     margin: 20px auto;
@@ -60,6 +59,9 @@ span select{
     background-color: inherit;
     appearance: none;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-item: center;
 }
 #uhrs::after,
 #umins::after,
