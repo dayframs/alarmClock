@@ -1,4 +1,4 @@
-let a, b, c, uHr, uMin, uSec, x;    
+let a, b, c, d, e, f, uHr, uMin, uSec, x;    
 
 function myFunc(){
     let currentTime = new Date();
