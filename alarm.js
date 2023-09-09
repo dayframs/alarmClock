@@ -12,7 +12,7 @@ function myFunc(){
     seconds.innerText = currentTime.getSeconds();
     if (a==uHr && b==uMin && c==uSec) {
         x = new Audio("./mus2.mp3");
-        x.play();
+        alert('wake up');
     }
 }
 
