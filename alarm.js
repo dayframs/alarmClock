@@ -1,4 +1,4 @@
-let a, b, c, uHr, uMin, uSec, x;    
+let a, b, c, d, e, uHr, uMin, uSec, x;    
 
 function myFunc(){
     let currentTime = new Date();
@@ -11,12 +11,12 @@ function myFunc(){
     minutes.innerText = currentTime.getMinutes();
     seconds.innerText = currentTime.getSeconds();
 
-    console.log(a, 'Ola');
-    console.log(uHr, 'Ade');
     if (a==uHr && b==uMin && c==uSec) {
         x = new Audio("mus2.mp3");
+        console.log(x);
         x.play();
-        // x.loop();
+        x.loop = true;
+        setTimeout(myFunc, 120000);
     }
 }
 
@@ -29,5 +29,10 @@ function setAlarm() {
     uSec = userSeconds.value;
 }
 function stopAlarm() {
-    x.pause();
+    d = (Math.floor(Math.random() * 100));
+    e = prompt(d);
+
+    if (e == d) {
+        x.pause();
+    } 
 }
