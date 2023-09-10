@@ -12,7 +12,7 @@ function myFunc(){
     seconds.innerText = currentTime.getSeconds();
 
     if (a==uHr && b==uMin && c==uSec) {
-        x = new Audio("mus2.mp3");
+        x = new Audio("./mus2.mp3");
         console.log(x);
         x.play();
         x.loop = true;
