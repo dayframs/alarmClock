@@ -28,9 +28,10 @@ function setAlarm() {
 function stopAlarm() {
     d = Math.floor(Math.random() * 10);
     e = Math.ceil(Math.random() * 10);
-    f = prompt(d + '+' + e);
-    g = eval(d + '+' + e)
-    if (g==f) {
+    f = d + '+' + e;
+    g = prompt(f);
+    h = eval(f)
+    if (h==g) {
          x.pause();
  } 
 }
